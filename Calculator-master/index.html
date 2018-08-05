@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <div class= "center">
+            <div class= "frame">
+                <form name= "calculator">
+                    <table class= "center">
+                        <tr>
+                            <input type= "text" name= "display" id= "display" align= "center" class= "textBox" size= "20" disabled>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "clear" value= "clr" onclick= "calculator.display.value = ''">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "leftParenthesis" value= "(" onclick= "calculator.display.value += '('">
+                            </td>
+                            <td>
+                                    <input type= "button" class= "inputButton" name= "rightParenthesis" value= ")" onclick= "calculator.display.value += ')'">
+                                </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "divide" value= "/" onclick= "calculator.display.value += '/'">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type= "button" class= "inputButton" name= "seven" value= "7" onclick= "calculator.display.value += '7'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "eight" value= "8" onclick= "calculator.display.value += '8'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "nine" value= "9" onclick= "calculator.display.value += '9'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "times" value= "*" onclick= "calculator.display.value += '*'">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type= "button" class= "inputButton" name= "four" value= "4" onclick= "calculator.display.value += '4'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "five" value= "5" onclick= "calculator.display.value += '5'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "six" value= "6" onclick= "calculator.display.value += '6'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "minus" value= "-" onclick= "calculator.display.value += '-'">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <input type= "button" class= "inputButton" name= "one" value= "1" onclick= "calculator.display.value += '1'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" class= "button" name= "two" value= "2" onclick= "calculator.display.value += '2'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "three" value= "3" onclick= "calculator.display.value += '3'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "plus" value= "+" onclick= "calculator.display.value += '+'">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "clear" value= "clr" onclick= "calculator.display.value = ''">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "zero" value= "0" onclick= "calculator.display.value += '0'">
+                            </td>
+                            <td>
+                                <input type= "button" class= "inputButton" name= "delete" value= "dlt" onclick= "deleteLast(); calculator.display.value">
+                                <!-- button class= "inputButton" onclick= "deleteLast(); calculator.display.value">dlt</button -->
+                                <td>
+                                <input type= "button" class= "inputButton" name= "evaluate" value= "=" onclick= "calculator.display.value = eval(calculator.display.value)">
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class= "row">
+                <div class= "column">
+                    <form align= "center">
+                        <input type= "button" class= "button" onclick= "window.location.href= 'https://blustate.github.io/BLU-Webpage/portfolio.html'" value= "Portfolio">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src= "index.js"></script>
+    </body>
+</html>
